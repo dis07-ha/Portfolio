@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c81f8037ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class=" fas fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class=" fas fa-solid fa-person-digging" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+             <h1>"Hello, I'm Disha Hazra, a versatile Front-End Developer<br> and UI/UX Designer."</h1>
+        </div>
+    </div>
+</div>
+<!-------------about---------------->
+<div id="about">
+    <div class="container">
+         <div class="row">
+              <div class="about-col-1">
+                  <img src="pics/e.png.jpg">
+              </div>
+              <div class="about-col-2">
+                <h1 class="sub-title"><b>About Me</b></h1>
+                <p>Enthusiastic UI/UX designer and web developer with a fresh perspective and a passion for creating user-centric digital experiences.Proficient in design tools and front-end technologies.Eager to contribute innovative solutions, collaborate with dynamic teams, and embark on a journey of continuous learning in the ever-evolving world of design and development.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('experience')">Experiences</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                </div>
+                <div class="tab-contents active-tab" id="experience">
+                    <ul>
+                        <li><span>Google UX Design Professional Certificate</span><br><p>Google September 2023 - October 2023</p><br>Learned everything about web Designing and about
+                            tools that help to implement ideas. Also learned how to
+                            use the design thinking process to give users the best
+                            experience.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>B.TECH CSE SPECIALIZATION IN AIML</span><br><p>Adamas University ,Kolkata (WB) | 2021-2025</p></li>
+                        <hr>
+                        <li><span>HIGH SCHOOL GRADUATION & MATRICULATION</span><br><p>Kendriya Vidyalaya| 2011 - 2021</p></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Soft Skills</span><br>user-Centered Design Mindset<br>Attention to Detail<br>Creative Thinking<br>Time Management</li>
+                        <hr>
+                        <li><span>Technical Skills</span><br>HTML,CSS,JS<br>UX Design<br>Java<br>Python</li>
+                    </ul>
+                </div>
+              </div>
+         </div>
+    </div>
+</div>
+<!-- ------projects------- -->
+<div id="projects">
+      <div class="container">
+        <h1 class="sub-title"><b>Projects</b></h1>
+        <div class="projects-list">
+             <div>
+                <i class="fa-solid fa-code-commit"></i>
+                <h2>NEAREST ZEBRA CROSSING & ROAD SIGNAL NAVIGATOR<br>Oct 2023 - Nov 2023</h2>
+                <p>Designed a simple website that detects the location and
+                    navigates to the nearest Zebra crossing or Crossing
+                    Signal</p>
+                    <a href="https://github.com/dis07-ha/-Nearest-Zebra-Crossing-and-Road-Signal-Navigator">Learn more</a>
+             </div>
+             <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>OBSTACLE SENSING STICK FOR VISUALLY IMPAIRED<br>May 2022 - July 2022</h2>
+                <p>Designed Arduino Code for stick to sense obstacle for
+                    Visually Impaired Person</p>
+                    <a href="https://github.com/dis07-ha/Smart-stick">Learn more</a>
+             </div>
+        </div>
+      </div>
+</div>
+<!-------portfolio------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"><b>My Work</b></h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="pics/project1.png">
+                <div class="layer">
+                    <h3>Simple Website</h3>
+                    <p> It detects the location and
+                        navigates to the nearest Zebra crossing</p>
+                        <a href="#"<i class=" fas fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pics/pro.png.jpg">
+                <div class="layer">
+                <h3>Obstacle Sensing Stick</h3>
+                    <p> stick to sense obstacle for Visually Impaired Person.</p>
+                    <a href="#"<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+             </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-------contact-------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"><b>Contact Me</b></h1>
+                <p><i class="fa-solid fa-envelope"></i>hazradisha2003@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/disha-hazra/"><i class="fa-brands fa-linkedin"></i></a>
+
+                    <a href="https://github.com/dis07-ha"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="pics/Resume.pdf.pdf" download class="btn btn1">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" row="5" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn1">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © January 2024  by Disha Hazra</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents"); 
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+}
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx1Kxk7Be1bjVjJv8txQu3g0hv4GaPsqdObLx730MpLRneY29hjXOyRc3We5ahgORyY/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Ha bhai agya message!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
